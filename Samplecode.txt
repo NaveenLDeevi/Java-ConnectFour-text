@@ -1,0 +1,46 @@
+import java.util.*;
+public class ConnectFour {
+
+	public static void main(String[] args) {
+		String y = null;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter players name:");
+		String Player1 = scanner.next();
+		System.out.println("Hai "+Player1+" you are Player1.");
+		System.out.print("Enter competitor's name:");
+		String Player2 = scanner.next();
+		System.out.print("Hai "+Player2+" you are Player2.");
+		Random x = new Random();
+		int number = x.nextInt(2);
+		if ( number == 0)
+		 {
+			y = Player1;
+		Player1 = Player2;
+		Player2 = y;
+		System.out.println("Randomized so Player1 is "+Player1);
+		System.out.println("Player2 is "+Player2);
+		 }
+		else
+		{
+			System.out.println("Player1 is" +Player1);
+			System.out.println("Player2 is "+Player2);
+		}
+		}
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
